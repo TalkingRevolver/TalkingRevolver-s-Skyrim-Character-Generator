@@ -83,3 +83,22 @@ cDesc = {   'Agent':'Masters of espionage and trickery. They prefer to have\n\to
             'They employ a\n\tvariety of magical skills and walk\n\ta variety of paths.',
             'Thief':'Rogues adept at taking what isn’t theirs.\n\t'+
             'Burglary, picking pockets, and mugging are among\n\ta thief’s skillsets.'}
+
+## Alignments ##
+alignList = ['Chaotic Good', 'Chaotic Neutral', 'Chaotic Evil',
+             'Lawful Good', 'Lawful Neutral', 'Lawful Evil']
+
+## Traits ##
+tListPos = ['Compassionate', 'Generous', 'Child at heart', 'Creative',
+            'Inquisitive', 'Charming', 'Art Lover', 'Self-sacrificing',
+            'Empathetic', 'Animal Lover', 'Passionate', 'Adventurous',
+            'Food Lover']
+
+tListNeg = ['Selfish', 'Quick to anger', 'Spiteful', 'Cynical', 'Abrasive',
+            'Antisocial', 'Alcoholic', 'Inconsiderate', 'Bloodthirsty',
+            'Destructive', 'Deceitful', 'Manipulative', 'Racist']
+
+tListNeu = ['Impulsive', 'Melancholic', 'Slow-witted', 'Quiet',
+            'Dislikes children', 'Dislikes animals', 'Dislikes alcohol',
+            'Intelligent', 'Single-minded', 'Imposing', 'Awkward',
+            'Rabble-rouser', 'Restless', 'Well-intentioned']

@@ -1,5 +1,5 @@
 # TalkingRevolver's Skyrim Character Generator #
-Current version: 0.3.0
+Current version: 0.4.0
 
 Changelogs:
 
@@ -24,3 +24,8 @@ Changelogs:
 		Heavy Armor, and vice versa
 	- Main menu is now handled by displayMenu function
 	- Added ability to choose number of skills generated
+
+	04/02/23 - ver 0.4.0
+	- Added alignment and trait lists to listModule
+	- Implemneted alignment and trait generation
+	- Minor changes to display for readability
