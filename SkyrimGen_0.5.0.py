@@ -20,6 +20,7 @@ class Character:
         self.align = None # Alignment
         self.skills = [] # Skills list
         self.traits = [] # Character traits
+        self.looks = [] # Character appearance
 
     # setRace
     # Generates a random number, gets string from raceList, sets to self.race
@@ -82,6 +83,10 @@ class Character:
         cNum = random.randint(0, len(listModule.classList) - 1)
         c = listModule.classList[cNum]
         self.clss = c
+
+        # DEBUG #
+        # logging.debug('Class: ' + self.clss)
+        # ----- #
 
         # Append class skills to self.skills
         l = listModule.skillListC.get(c)
@@ -196,6 +201,30 @@ class Character:
                         t = tList[num]
                     self.traits.append(t)
 
+    # setAppearance
+    # Recieves self.race
+    # Generates appearance traits based on race, appends to self.looks
+    def setAppearance(self, r):
+        if r == 'Argonian':
+            sList = listModule.scalesList
+        elif r == 'Khajiit':
+            sList = listModule.furList
+        else:
+            sList = listModule.compList
+
+        num = random.randint(0, len(sList) - 1)
+        self.looks.append(sList[num])
+
+        if r == 'Khajiit' or r == 'Argonian':
+            self.looks.append(None)
+        else:
+            num = random.randint(0, len(listModule.hairList) - 1)
+            self.looks.append(listModule.hairList[num])
+
+        num = random.randint(0, len(listModule.eyeList) - 1)
+        self.looks.append(listModule.eyeList[num])
+            
+
 ## MAIN ##
 def main():
     # Create Character object
@@ -206,6 +235,9 @@ def main():
 
     # Call setGender
     char.setGender()
+
+    # Call setAppearance
+    char.setAppearance(char.race)
 
     # Call setAlign
     char.setAlign()
@@ -231,6 +263,18 @@ def main():
     # Display
     print('Race: ' + char.race)
     print('Gender: ' + char.gender)
+
+    if char.looks[0] in listModule.scalesList:
+        print('\nSkin Color: ' + char.looks[0])
+    elif char.looks[0] in listModule.furList:
+        print('\nFur Color: ' + char.looks[0])
+    else:
+        print('\nComplexion: ' + char.looks[0])
+
+    if char.looks[1] != None:
+        print('Hair Color: ' + char.looks[1])
+        
+    print('Eye Color: ' + char.looks[2])
 
     if char.align != None:
         print('\nAlignment: ' + char.align)

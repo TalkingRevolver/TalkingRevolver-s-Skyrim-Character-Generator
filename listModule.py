@@ -64,7 +64,7 @@ cDesc = {   'Agent':'Masters of espionage and trickery. They prefer to have\n\to
             'Craftsman':'Merchants trying to make an honest living. They may use\n' +
             '/teither word or weapon to aqcuire resources.',
             'Knight':'Knights prefer the tried and true sword and shield. Some serve\n' +
-            '\tnobility, others live the life of a sword-for-higher.',
+            '\tnobility, others live the life of a sword-for-hire.',
             'Nightblade':'Stealthy fighters who use magic to supplement/n' +
             'their own abilities. While they make great assassins, some\n' +
             'simply revel in trickery and chaos.',
@@ -102,3 +102,16 @@ tListNeu = ['Impulsive', 'Melancholic', 'Slow-witted', 'Quiet',
             'Dislikes children', 'Dislikes animals', 'Dislikes alcohol',
             'Intelligent', 'Single-minded', 'Imposing', 'Awkward',
             'Rabble-rouser', 'Restless', 'Well-intentioned']
+
+## Appearance ##
+compList = ['Pale', 'Fair', 'Average', 'Dark']
+
+scalesList = ['Green', 'Brown', 'Black', 'Red', 'Blue', 'Purple']
+
+furList = ['Light Brown', 'Dark Brown', 'Black', 'White', 'Cream', 'Yellow',
+           'Orange', 'Red']
+
+hairList = ['Black', 'Grey', 'White', 'Light BLonde', 'Dirty Blonde',
+            'Light Brown', 'Dark Brown', 'Auburn', 'Red']
+
+eyeList = ['Brown', 'Green', 'Blue', 'Hazel', 'Grey', 'Exotic']

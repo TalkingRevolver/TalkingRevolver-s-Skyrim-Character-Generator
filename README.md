@@ -1,5 +1,5 @@
 # TalkingRevolver's Skyrim Character Generator #
-Current version: 0.4.0
+Current version: 0.5.0
 
 Changelogs:
 
@@ -29,3 +29,7 @@ Changelogs:
 	- Added alignment and trait lists to listModule
 	- Implemneted alignment and trait generation
 	- Minor changes to display for readability
+
+	05/02/2023 - ver 0.5.0
+	- Added appearance lists to listModule
+	- Implemented character appearance generation
