@@ -1,5 +1,5 @@
 # TalkingRevolver's Skyrim Character Generator #
-Current version: 0.5.0
+Current version: 0.6.0
 
 Changelogs:
 
@@ -33,3 +33,9 @@ Changelogs:
 	05/02/2023 - ver 0.5.0
 	- Added appearance lists to listModule
 	- Implemented character appearance generation
+
+	05/06/2023 - ver 0.6.0
+	- Added weapon preference lists to listModule
+	- Implemented weapon preference generation
+		- 'Blade', 'blunt', or 'axe' for One-handed and Two-handed
+		- 'Fire', 'frost', or 'shock' for Destruction'
