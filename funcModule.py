@@ -1,6 +1,7 @@
 ### funcModule ###
 
 # displayMenu
+# Called by main()
 # Displays main menu
 def displayMenu():
     print('\tTalkingRevolver\'s Skyrim')
@@ -14,7 +15,8 @@ def displayMenu():
     return num
 
 # redunCheck
-# Recieves a skill as a string from setSkills, and skills list
+# Called by self.setSkills()
+# Recieves a skill as a string, and self.skills
 # Checks if a redundant skill is about to be added to self.skills
 # A skill is redundant if it conflicts with another skill from a build
 #   perspective; ie. Light Armor and Heavy Armor
@@ -24,15 +26,18 @@ def redunCheck(skill, sList):
 
     match skill:
         # Light Armor, Heavy Armor, Evasion
-        case 'Light Armor' | 'Heavy Armor':
+        case 'Light Armor' | 'Heavy Armor' | 'Evasion':
             if 'Heavy Armor' in sList:
                 isRedun = True
                 return isRedun
             elif 'Light Armor' in sList:
                 isRedun = True
                 return isRedun
+            elif 'Evasion' in sList:
+                isRedun = True
+                return isRedun
         
-        # One-handed, Two-handed, Light Weaponry, Heavy Weaponry
+        # One-handed, Two-handed
         case 'One-handed' | 'Two-handed':
             if 'One-handed' in sList:
                 isRedun = True
@@ -44,3 +49,18 @@ def redunCheck(skill, sList):
 
     # If skill not redundant, return False
     return isRedun
+
+# chanceRoll
+# Simulates percent chance rolls
+# Recieves string (item), gets percent value associated with item from
+#   percentLists (per)
+# Generates a number, if given value > number, reroll == False
+#   (item will not be re-generated within method)
+# Else, reroll == True (item will be re-generated within method)
+# Returns reroll
+def chanceRoll(item, per):
+    match item:
+        case '':
+            percent = percentLists.dic.get(c)
+
+    
