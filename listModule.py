@@ -202,7 +202,53 @@ eList = ['Fire', 'Frost', 'Shock']
 
 ## Alignments ##
 alignList = ['Chaotic Good', 'Chaotic Neutral', 'Chaotic Evil',
-             'Lawful Good', 'Lawful Neutral', 'Lawful Evil']
+             'Lawful Good', 'Lawful Neutral', 'Lawful Evil',
+             'Neutral Good', 'Neutral Evil']
+
+## Wintersun Deity Lists ##
+
+# Deities by race
+dListR = {'Altmer':['Stendarr', 'Auriel', 'Jephre', 'Magnus', 'Phynaster', 'Syrabane', 'Trinimac',
+            'Xarxes', 'None'], 'Argonian':['The Hist', 'Sithis', 'None'], 'Bosmer':['Arkay', 'Mara', 'Stendarr',
+            'Hircine', 'Auriel', 'Jephre', 'Magnus', 'Phynaster', 'Xarxes', "Z'en", 'None'],
+            'Breton':['Akatosh', 'Arkay', 'Dibella', 'Mara', 'Stendarr', 'Zenithar', 'Magnus',
+            'Phynaster', 'Xarxes', 'None'], 'Dunmer':['Azura', 'Boethiah', 'Malacath', 'Mehrunes Dagon',
+            'Mephala', 'Molag Bal', 'Sheogorath', 'None'], 'Imperial':['Imperial', 'Arkay', 'Dibella',
+            'Julianos', 'Kynareth', 'Mara', 'Stendarr', 'Talos', 'Zenithar', 'None'], 'Khajiit':
+            ['Akatosh', 'Kynareth', 'Azura', 'Mehrunes Dagon', 'Mephala', 'Sheogorath', 'Rajhin',
+             "Riddle'Thar", 'None'], 'Nord':['Akatosh', 'Arkay', 'Dibella', 'Kynareth', 'Mara', 'Stendarr',
+            'Talos', 'Zenithar', 'Shor', 'None'], 'Orc':['Malacath', 'Trinimac', 'None'], 'Redguard':['Leki',
+            'Morwha', 'Satakal', 'Tall Papa', 'The HoonDing', 'None']}
+
+# Deities by alignment
+dListA = {'Lawful Good':['Akatosh','Arkay','Dibella','Julianos','Kynareth','Mara','Stendarr',
+                         'Talos','Zenithar','Azura','Malacath','Auriel','Magnus','Phynaster',
+                         'Syrabane','Trinimac','Xarxes','Leki','Morwha','Satakal','Tall Papa',
+                         'The HoonDing',"Riddle'Thar",'Shor','The Hist'],
+          'Neutral Good':['Akatosh','Arkay','Dibella','Julianos','Kynareth','Mara','Stendarr',
+                          'Talos','Zenithar','Azura','Hircine','Malacath','Auriel','Jephre',
+                          'Magnus','Phynaster','Syrabane','Trinimac',"Z'en",'Leki','Morwha',
+                          'Satakal','Tall Papa','The HoonDing',"Riddle'Thar",'Shor','The Hist'],
+          'Chaotic Good':['Akatosh','Arkay','Dibella','Kynareth','Mara','Talos','Azura','Hircine',
+                          'Malacath','Sheogorath','Auriel','Jephre','Magnus','Phynaster',
+                          'Syrabane','Trinimac',"Z'en",'Leki','Morwha','Satakal','Tall Papa',
+                          'The HoonDing','Rahjhin',"Riddle'Thar",'Shor','The Hist'],
+          'Lawful Evil':['Julianos','Zenithar','Azura','Boethiah','Malacath','Mephala','Molag Bal',
+                         'Magnus','Syrabane','Trinimac','Xarxes','Satakal','The Hoonding',
+                         "Riddle'Thar",'Sithis'],
+          'Neutral Evil':['Julianos','Zenithar','Boethiah','Hircine','Malacath','Mehrunes Dagon',
+                          'Mephala','Molag Bal','Magnus','Syrabane','Trinimac','The HoonDing',
+                          'Rajihn',"Riddle'Thar",'Sithis'],
+          'Chaotic Evil':['Boethiah','Hircine','Malacath','Mehrunes Dagon','Mephala', 'Molag Bal',
+                          'Sheogorath','Trinimac','The HoonDing','Rajhin','Sithis'],
+          'Chaotic Neutral':['Dibella','Kynareth','Talos','Azura','Boethiah','Hircine','Malacath',
+                             'Mehrunes Dagon','Mephala','Molag Bal','Sheogorath','Jephre','Phynaster',
+                             'Trinimac',"Z'en",'Leki','Satakal','Tall Papa','The HoonDing',
+                             'Rajhin',"Riddle'Thar",'The Hist'],
+          'Lawful Neutral':['Akatosh','Arkay','Julianos','Kynareth','Stendarr', 'Talos','Zenithar',
+                            'Azura','Malacath','Mephala','Auriel','Magnus','Phynaster','Syrabane',
+                            'Trinimac','Xarxes','Leki','Morwha','Satakal','Tall Papa','The HoonDing',
+                            "Riddle'Thar",'The Hist']}
 
 ## Traits ##
 tListPos = ['Compassionate', 'Generous', 'Child at heart', 'Creative',

@@ -64,3 +64,9 @@ Changelogs:
 			program
 	- Minor text edits for consistency, clarity, and readability
 	- Added application icon
+
+	06/01/24 - ver. 1.0.0
+	- Added support for Wintersun - Faiths of Skyrim
+	- Added 'Neutral Good' and 'Neutral Evil' to alignment generation
+		- Added relevant generation options to traits
+	- Added functionality for writing character info to text file for easy access later
